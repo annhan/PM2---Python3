@@ -32,6 +32,7 @@ Lưu trạng thái pm2 save
 pm2 init
 viet
 
+```
 module.exports = {
   apps : [{
     name: 'echo-python-3',
@@ -51,6 +52,7 @@ module.exports = {
     }
   }]
 };
+```
 
 pm2 start ecosystem.config.js
 Restart in “production” (env_production):
