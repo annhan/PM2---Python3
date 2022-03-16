@@ -16,12 +16,13 @@ Status check : ```pm2 status```
 
 pm2 Run: ```pm2 start index.js```
 
-Lưu trạng thái ```pm2 save```
+
 
 # Cài pm2 auto start when computer restae :  
 
 ```pm2 startup``` Pm2 will show command, you need to copy and past to terminal
 
+Lưu trạng thái ```pm2 save``` để lưu app sử dụng PM2
 Reboot :sudo reboot
 
 Check log pm2 logs index Delete log file to null
@@ -36,9 +37,14 @@ $ pm2 stop app_name
 $ pm2 delete app_name
 ```
 
-# Init PM2 python3
+# Run Python3 with pm2
 
- - Khởi tạo ```pm2 init``` sau đó write vào ecosystem.config.js
+- ```pm2 start app.py --interpreter python3```
+
+
+# USING THE ECOSYSTEM FILE
+
+ - Khởi tạo ```pm2 init``` create o ecosystem.config.js
 
 ```
 module.exports = {
