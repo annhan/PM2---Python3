@@ -15,10 +15,15 @@ Kiểm tra trạng thái pm2 status
 
 Check log pm2 logs index Delete log file to null
 
+```
 cd .pm2/logs
 cat /dev/null >index-out.log
-$ pm2 restart app_name $ pm2 reload app_name $ pm2 stop app_name $ pm2 delete app_name
+$ pm2 restart app_name
+$ pm2 reload app_name 
+$ pm2 stop app_name
 
+$ pm2 delete app_name
+```
 
 # 
 
