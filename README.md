@@ -1,17 +1,28 @@
 # PM2---Python3
 
+
+# install nodeJS
+
+```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
+```
 
-sudo npm install -g pm2
+# install PM2
 
-kiểm tra tra : pm2 status
+Install: ```sudo npm install -g pm2```
 
-Cài pm2 start khi khởi động máy tính pm2 startup nó sẽ ra lệnh, copy lệnh paste vào command line
+Status check : ```pm2 status```
 
-Khởi động lại sudo reboot
+pm2 Run: ```pm2 start index.js```
 
-Kiểm tra trạng thái pm2 status
+Lưu trạng thái ```pm2 save```
+
+# Cài pm2 auto start when computer restae :  
+
+```pm2 startup``` Pm2 will show command, you need to copy and past to terminal
+
+Reboot :sudo reboot
 
 Check log pm2 logs index Delete log file to null
 
@@ -25,17 +36,9 @@ $ pm2 stop app_name
 $ pm2 delete app_name
 ```
 
-# 
+# Init PM2 python3
 
-Chạy node bằng pm2: pm2 start index.js
-
-Lưu trạng thái pm2 save
-
-
-#
-
-pm2 init
-viet
+ - Khởi tạo ```pm2 init``` sau đó write vào ecosystem.config.js
 
 ```
 module.exports = {
@@ -59,7 +62,6 @@ module.exports = {
 };
 ```
 
-pm2 start ecosystem.config.js
-Restart in “production” (env_production):
+- Start ```pm2 start ecosystem.config.js```
 
-pm2 restart ecosystem.config.js --env production
+- restart with args ```pm2 restart ecosystem.config.js --env production```
