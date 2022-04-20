@@ -75,8 +75,8 @@ B2: chạy app ```pm2 start ecosystem.config.js```
 
 B3: Lưu trạng thái ```pm2 save``` để lưu app sử dụng PM2
 
-Reboot :sudo reboot
-
+# Check log
+ 
 Check log pm2 logs index Delete log file to null
 
 ```
